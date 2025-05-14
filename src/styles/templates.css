@@ -1,0 +1,245 @@
+/* 基础模板样式 */
+.template-base {
+  @apply rounded-2xl shadow-lg p-6;
+}
+
+/* 1. 渐变背景 + 花纹边框 */
+.template-gradient-pattern {
+  @apply template-base bg-gradient-to-br from-purple-50 to-pink-100 border-8 border-purple-200;
+  background-image: 
+    linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.template-gradient-pattern h1 {
+  @apply text-2xl font-bold mb-4 text-purple-700;
+}
+
+.template-gradient-pattern h2 {
+  @apply text-xl font-bold mb-3 text-purple-600;
+}
+
+.template-gradient-pattern p {
+  @apply mb-4 text-purple-900;
+}
+
+.template-gradient-pattern blockquote {
+  @apply border-l-4 border-purple-300 pl-4 italic text-purple-800;
+}
+
+/* 2. 现代简约风格 */
+.template-modern {
+  @apply template-base bg-white border-2 border-gray-200;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.template-modern h1 {
+  @apply text-2xl font-bold mb-4 text-gray-800;
+}
+
+.template-modern h2 {
+  @apply text-xl font-bold mb-3 text-gray-700;
+}
+
+.template-modern p {
+  @apply mb-4 text-gray-600;
+}
+
+.template-modern blockquote {
+  @apply border-l-4 border-gray-300 pl-4 italic text-gray-700 bg-gray-50;
+}
+
+/* 3. 商务风格 */
+.template-business {
+  @apply template-base bg-gradient-to-br from-blue-50 to-blue-100 border-l-8 border-blue-500;
+}
+
+.template-business h1 {
+  @apply text-2xl font-bold mb-4 text-blue-800;
+}
+
+.template-business h2 {
+  @apply text-xl font-bold mb-3 text-blue-700;
+}
+
+.template-business p {
+  @apply mb-4 text-blue-900;
+}
+
+.template-business blockquote {
+  @apply border-l-4 border-blue-400 pl-4 italic text-blue-800 bg-blue-50;
+}
+
+/* 4. 科技风格 */
+.template-tech {
+  @apply template-base bg-gray-900 text-white border-2 border-blue-500;
+  background-image: 
+    radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+}
+
+.template-tech h1 {
+  @apply text-2xl font-bold mb-4 text-blue-400;
+}
+
+.template-tech h2 {
+  @apply text-xl font-bold mb-3 text-blue-300;
+}
+
+.template-tech p {
+  @apply mb-4 text-gray-300;
+}
+
+.template-tech blockquote {
+  @apply border-l-4 border-blue-500 pl-4 italic text-blue-300 bg-gray-800;
+}
+
+/* 5. 自然风格 */
+.template-nature {
+  @apply template-base bg-gradient-to-br from-green-50 to-emerald-100 border-8 border-green-200;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.template-nature h1 {
+  @apply text-2xl font-bold mb-4 text-green-800;
+}
+
+.template-nature h2 {
+  @apply text-xl font-bold mb-3 text-green-700;
+}
+
+.template-nature p {
+  @apply mb-4 text-green-900;
+}
+
+.template-nature blockquote {
+  @apply border-l-4 border-green-400 pl-4 italic text-green-800 bg-green-50;
+}
+
+/* 6. 艺术风格 */
+.template-artistic {
+  @apply template-base bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 border-8 border-pink-200;
+  background-image: 
+    linear-gradient(30deg, rgba(255, 255, 255, 0.2) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.2) 87.5%, rgba(255, 255, 255, 0.2)),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.2) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.2) 87.5%, rgba(255, 255, 255, 0.2)),
+    linear-gradient(30deg, rgba(255, 255, 255, 0.2) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.2) 87.5%, rgba(255, 255, 255, 0.2)),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.2) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.2) 87.5%, rgba(255, 255, 255, 0.2)),
+    linear-gradient(60deg, rgba(255, 255, 255, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+    linear-gradient(60deg, rgba(255, 255, 255, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1));
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+.template-artistic h1 {
+  @apply text-2xl font-bold mb-4 text-pink-700;
+}
+
+.template-artistic h2 {
+  @apply text-xl font-bold mb-3 text-purple-600;
+}
+
+.template-artistic p {
+  @apply mb-4 text-indigo-900;
+}
+
+.template-artistic blockquote {
+  @apply border-l-4 border-pink-400 pl-4 italic text-pink-800 bg-pink-50;
+}
+
+/* 7. 复古风格 */
+.template-vintage {
+  @apply template-base bg-amber-50 border-8 border-amber-200;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23fbbf24' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.template-vintage h1 {
+  @apply text-2xl font-bold mb-4 text-amber-800;
+}
+
+.template-vintage h2 {
+  @apply text-xl font-bold mb-3 text-amber-700;
+}
+
+.template-vintage p {
+  @apply mb-4 text-amber-900;
+}
+
+.template-vintage blockquote {
+  @apply border-l-4 border-amber-400 pl-4 italic text-amber-800 bg-amber-50;
+}
+
+/* 8. 极简风格 */
+.template-minimal {
+  @apply template-base bg-white border-2 border-gray-100;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.template-minimal h1 {
+  @apply text-2xl font-bold mb-4 text-gray-900;
+}
+
+.template-minimal h2 {
+  @apply text-xl font-bold mb-3 text-gray-800;
+}
+
+.template-minimal p {
+  @apply mb-4 text-gray-700;
+}
+
+.template-minimal blockquote {
+  @apply border-l-2 border-gray-200 pl-4 italic text-gray-600;
+}
+
+/* 9. 霓虹风格 */
+.template-neon {
+  @apply template-base bg-gray-900 text-white border-2 border-pink-500;
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.5);
+}
+
+.template-neon h1 {
+  @apply text-2xl font-bold mb-4 text-pink-400;
+  text-shadow: 0 0 5px rgba(236, 72, 153, 0.5);
+}
+
+.template-neon h2 {
+  @apply text-xl font-bold mb-3 text-pink-300;
+  text-shadow: 0 0 5px rgba(236, 72, 153, 0.5);
+}
+
+.template-neon p {
+  @apply mb-4 text-gray-300;
+}
+
+.template-neon blockquote {
+  @apply border-l-4 border-pink-500 pl-4 italic text-pink-300 bg-gray-800;
+  text-shadow: 0 0 5px rgba(236, 72, 153, 0.3);
+}
+
+/* 10. 水彩风格 */
+.template-watercolor {
+  @apply template-base bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 border-8 border-blue-200;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%236366f1' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.template-watercolor h1 {
+  @apply text-2xl font-bold mb-4 text-blue-700;
+}
+
+.template-watercolor h2 {
+  @apply text-xl font-bold mb-3 text-purple-600;
+}
+
+.template-watercolor p {
+  @apply mb-4 text-pink-900;
+}
+
+.template-watercolor blockquote {
+  @apply border-l-4 border-blue-400 pl-4 italic text-blue-800 bg-blue-50;
+} 
